@@ -1,4 +1,4 @@
-package Java.Arrays;
+package java.arrays;
 // Task prompt:
 
 // Implement a program that initializes an array with our favorite numbers.
