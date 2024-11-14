@@ -1,15 +1,10 @@
-package java.arrays;
-// Task prompt:
+// Correct package declaration
+package java_.arrays; // Usa un nombre de paquete válido
 
-// Implement a program that initializes an array with our favorite numbers.
-// Then, ask the user for
-// the index of an element to be removed from the array. Continue removing
-// elements until the entered
-// index is negative or invalid.
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class favoritenumber {
+public class favoriteNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -36,9 +31,10 @@ public class favoritenumber {
             // Check if the index is within the range of the list
             if (index >= 0 && index < numbers.size()) {
                 int removed = numbers.remove(index);
-                System.out.println("Element " + removed + " removed. Updated list: " + numbers);
+                System.out.println("Removed element: " + removed);
+                System.out.println("Updated list of favorite numbers: " + numbers);
             } else {
-                System.out.println("Index out of range. Try again.");
+                System.out.println("Invalid index. Please try again.");
             }
 
             // If the list is empty, end the program
